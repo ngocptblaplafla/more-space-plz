@@ -1,0 +1,606 @@
+name: Remove Components in Github-hosted runner
+description: This will remove Components in Linux Github-hosted runner
+author: Phan Thanh Ngoc
+branding:
+  icon: minus-square
+  color: purple
+inputs:
+  aliyun:
+    description: Remove aliyun
+    required: true
+    default: 'false'
+  android-sdk:
+    description: Remove android-sdk
+    required: true
+    default: 'false'
+  apache:
+    description: Remove apache
+    required: true
+    default: 'false'
+  aws-tools:
+    description: Remove aws-tools
+    required: true
+    default: 'false'
+  azcopy:
+    description: Remove azcopy
+    required: true
+    default: 'false'
+  azure-cli:
+    description: Remove azure-cli
+    required: true
+    default: 'false'
+  azure-devops-cli:
+    description: Remove azure-devops-cli
+    required: true
+    default: 'false'
+  bazel:
+    description: Remove bazel
+    required: true
+    default: 'false'
+  bicep:
+    description: Remove bicep
+    required: true
+    default: 'false'
+  clang:
+    description: Remove clang
+    required: true
+    default: 'false'
+  cmake:
+    description: Remove cmake
+    required: true
+    default: 'false'
+  codeql-bundle:
+    description: Remove codeql-bundle
+    required: true
+    default: 'false'
+  container-tools:
+    description: Remove container-tools
+    required: true
+    default: 'false'
+  docker:
+    description: Remove docker
+    required: true
+    default: 'false'
+  docker-data:
+    description: Remove docker-data
+    required: true
+    default: 'false'
+  dotnet:
+    description: Remove dotnet
+    required: true
+    default: 'false'
+  erlang:
+    description: Remove erlang
+    required: true
+    default: 'false'
+  firefox:
+    description: Remove firefox
+    required: true
+    default: 'false'
+  gcc-compilers:
+    description: Remove gcc-compilers
+    required: true
+    default: 'false'
+  gfortran:
+    description: Remove gfortran
+    required: true
+    default: 'false'
+  github-cli:
+    description: Remove github-cli
+    required: true
+    default: 'false'
+  git-lfs:
+    description: Remove git-lfs
+    required: true
+    default: 'false'
+  git:
+    description: Remove git
+    required: true
+    default: 'false'
+  google-chrome:
+    description: Remove google-chrome
+    required: true
+    default: 'false'
+  google-cloud-cli:
+    description: Remove google-cloud-cli
+    required: true
+    default: 'false'
+  golang:
+    description: Remove golang
+    required: true
+    default: 'false'
+  haskell:
+    description: Remove haskell
+    required: true
+    default: 'false'
+  heroku:
+    description: Remove heroku
+    required: true
+    default: 'false'
+  hhvm:
+    description: Remove hhvm
+    required: true
+    default: 'false'
+  homebrew:
+    description: Remove homebrew
+    required: true
+    default: 'false'
+  java-tools:
+    description: Remove java-tools
+    required: true
+    default: 'false'
+  julia:
+    description: Remove julia
+    required: true
+    default: 'false'
+  kotlin:
+    description: Remove kotlin
+    required: true
+    default: 'false'
+  kubernetes-tools:
+    description: Remove kubernetes-tools
+    required: true
+    default: 'false'
+  leiningen:
+    description: Remove leiningen
+    required: true
+    default: 'false'
+  man:
+    description: Remove manual, doc, info
+    required: true
+    default: 'false'
+  microsoft-edge:
+    description: Remove microsoft-edge
+    required: true
+    default: 'false'
+  miniconda:
+    description: Remove miniconda
+    required: true
+    default: 'false'
+  mongodb:
+    description: Remove mongodb
+    required: true
+    default: 'false'
+  mono:
+    description: Remove mono
+    required: true
+    default: 'false'
+  mssql-tools:
+    description: Remove mssql-tools
+    required: true
+    default: 'false'
+  mysql:
+    description: Remove mysql
+    required: true
+    default: 'false'
+  nginx:
+    description: Remove nginx
+    required: true
+    default: 'false'
+  nodejs:
+    description: Remove nodejs
+    required: true
+    default: 'false'
+  nvm:
+    description: Remove nvm
+    required: true
+    default: 'false'
+  oc-cli:
+    description: Remove oc-cli
+    required: true
+    default: 'false'
+  oras-cli:
+    description: Remove oras-cli
+    required: true
+    default: 'false'
+  packer:
+    description: Remove packer
+    required: true
+    default: 'false'
+  phantomjs:
+    description: Remove phantomjs
+    required: true
+    default: 'false'
+  php:
+    description: Remove php
+    required: true
+    default: 'false'
+  pipx-packages:
+    description: Remove pipx-packages
+    required: true
+    default: 'false'
+  postgresql:
+    description: Remove postgresql
+    required: true
+    default: 'false'
+  powershell:
+    description: Remove powershell
+    required: true
+    default: 'false'
+  pulumi:
+    description: Remove pulumi
+    required: true
+    default: 'false'
+  pypy:
+    description: Remove pypy
+    required: true
+    default: 'false'
+  python:
+    description: Remove python
+    required: true
+    default: 'false'
+  rlang:
+    description: Remove rlang
+    required: true
+    default: 'false'
+  ruby:
+    description: Remove ruby
+    required: true
+    default: 'false'
+  rust:
+    description: Remove rust
+    required: true
+    default: 'false'
+  sbt:
+    description: Remove sbt
+    required: true
+    default: 'false'
+  selenium:
+    description: Remove selenium
+    required: true
+    default: 'false'
+  snap:
+    description: Remove snap
+    required: true
+    default: 'false'
+  sqlpackage:
+    description: Remove sqlpackage
+    required: true
+    default: 'false'
+  swap:
+    description: Remove swap
+    required: true
+    default: 'false'
+  swift:
+    description: Remove swift
+    required: true
+    default: 'false'
+  terraform:
+    description: Remove terraform
+    required: true
+    default: 'false'
+  vcpkg:
+    description: Remove vcpkg
+    required: true
+    default: 'false'
+  yq:
+    description: Remove yq
+    required: true
+    default: 'false'
+  zstd:
+    description: Remove zstd
+    required: true
+    default: 'false'
+runs:
+  using: composite
+  steps:
+    - name: Disk space available
+      shell: bash
+      run: | 
+        echo "Available storage:"
+        df -h
+    - name: Remove swap
+      if: ${{inputs.swap == 'true' }}
+      shell: bash
+      run: |
+        sudo swapoff -a
+        sudo rm -rf /mnt/swapfile
+    - name: Remove homebrew
+      if: ${{inputs.homebrew == 'true' }}
+      shell: bash
+      run: sudo rm -rf /home/linuxbrew/
+    - name: Remove snap
+      if: ${{inputs.snap == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y snapd > /dev/null
+    - name: Remove golang
+      if: ${{inputs.golang == 'true' }}
+      shell: bash
+      run: sudo rm -rf /opt/hostedtoolcache/go
+    - name: Remove pipx-packages
+      if: ${{inputs.pipx-packages == 'true' }}
+      shell: bash
+      run: pipx uninstall-all > /dev/null
+    - name: Remove docker data
+      if: ${{inputs.docker-data == 'true' }}
+      shell: bash
+      run: docker system prune -af > /dev/null
+    - name: Remove docker
+      if: ${{inputs.docker == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y containerd.io docker-ce-cli docker-ce > /dev/null
+        sudo rm -rf /usr/libexec/docker/cli-plugins /usr/bin/docker-credential-ecr-login
+    - name: Remove zstd
+      if: ${{inputs.zstd == 'true' }}
+      shell: bash
+      run: |
+        sudo rm -rf /usr/local/bin/zstd /usr/local/bin/zstdless /usr/local/bin/zstdgrep /usr/local/bin/pzstd \
+        /usr/local/bin/zstdcat /usr/local/bin/zstdmt /usr/local/bin/unzstd
+    - name: Remove python
+      if: ${{inputs.python == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y python3-dev python3-pip python3-venv pipx > /dev/null
+        sudo rm -rf /opt/pipx* /opt/hostedtoolcache/Python /usr/local/lib/python*
+    - name: Remove pypy
+      if: ${{inputs.pypy == 'true' }}
+      shell: bash
+      run: sudo rm -rf /opt/hostedtoolcache/PyPy
+    - name: Remove android-sdk
+      if: ${{inputs.android-sdk == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/lib/android
+    - name: Remove yq
+      if: ${{inputs.yq == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/bin/yq
+    - name: Remove mongodb
+      if: ${{inputs.mongodb == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y mongodb-org > /dev/null
+    - name: Remove vcpkg
+      if: ${{inputs.vcpkg == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/share/vcpkg
+    - name: Remove packer
+      if: ${{inputs.packer == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/packer
+    - name: Remove terraform
+      if: ${{inputs.terraform == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/terraform
+    - name: Remove selenium
+      if: ${{inputs.selenium == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/share/java/selenium-server
+    - name: Remove sbt
+      if: ${{inputs.sbt == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/share/sbt
+    - name: Remove julia
+      if: ${{inputs.julia == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/julia
+    - name: Remove rust
+      if: ${{inputs.rust == 'true' }}
+      shell: bash
+      run: sudo rm -rf /etc/skel/.rustup /etc/skel/.cargo $HOME/.rustup $HOME/.cargo
+    - name: Remove rlang
+      if: ${{inputs.rlang == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y r-base > /dev/null
+        sudo rm -rf /usr/local/lib/R
+    - name: Remove ruby
+      if: ${{inputs.ruby == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y ruby-full > /dev/null
+        sudo rm -rf /var/lib/gems /usr/lib/ruby /usr/include/ruby*
+    - name: Remove pulumi
+      if: ${{inputs.pulumi == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/pulumi*
+    - name: Remove postgresql
+      if: ${{inputs.postgresql == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y postgresql* libpq-dev > /dev/null
+    - name: Remove php
+      if: ${{inputs.php == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y php* snmp > /dev/null
+        sudo rm -rf /usr/bin/composer $HOME/.config/composer/vendor/bin /usr/local/bin/phpunit
+    - name: Remove phantomjs
+      if: ${{inputs.phantomjs == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/share/phantomjs*
+    - name: Remove oras-cli
+      if: ${{inputs.oras-cli == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/oras
+    - name: Remove bazel
+      if: ${{inputs.bazel == 'true' }}
+      shell: bash
+      run: npm uninstall @bazel/bazelisk > /dev/null
+    - name: Remove nodejs
+      if: ${{inputs.nodejs == 'true' }}
+      shell: bash
+      run: |
+        sudo rm -rf /usr/local/bin/node /usr/local/bin/npm /usr/local/bin/npx /usr/local/lib/node_modules/ \
+        /usr/local/bin/corepack /usr/local/include/node /usr/local/lib/dtrace/node.d /usr/local/share/doc/node \
+        /usr/local/share/man/man1/node.1 /usr/local/share/systemtap/tapset/node.stp /opt/hostedtoolcache/node
+    - name: Remove nvm
+      if: ${{inputs.nvm == 'true' }}
+      shell: bash
+      run: sudo rm -rf /etc/skel/.nvm $HOME/.nvm
+    - name: Remove nginx
+      if: ${{inputs.nginx == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y nginx > /dev/null
+    - name: Remove sqlpackage
+      if: ${{inputs.sqlpackage == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/sqlpackage
+    - name: Remove mssql-tools
+      if: ${{inputs.mssql-tools == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y mssql-tools unixodbc-dev > /dev/null
+    - name: Remove mysql
+      if: ${{inputs.mysql == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y mysql-client mysql-server libmysqlclient-dev > /dev/null
+    - name: Remove kotlin
+      if: ${{inputs.kotlin == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/kotlinc
+    - name: Remove mono
+      if: ${{inputs.mono == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y mono-complete nuget > /dev/null
+    - name: Remove miniconda
+      if: ${{inputs.miniconda == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/share/miniconda
+    - name: Remove leiningen
+      if: ${{inputs.leiningen == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/lein /usr/local/lib/lein
+    - name: Remove oc-cli
+      if: ${{inputs.oc-cli == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/oc
+    - name: Remove kubernetes-tools
+      if: ${{inputs.kubernetes-tools == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y kubectl > /dev/null
+        sudo rm -rf /usr/local/bin/kind /usr/local/bin/minikube /usr/local/bin/kustomize /usr/local/bin/helm
+    - name: Remove java-tools
+      if: ${{inputs.java-tools == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y temurin-*-jdk ant ant-optional > /dev/null
+        sudo rm -rf /usr/share/apache-maven* /usr/share/gradle*
+    - name: Remove hhvm
+      if: ${{inputs.hhvm == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y hhvm > /dev/null
+    - name: Remove heroku
+      if: ${{inputs.heroku == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y heroku > /dev/null
+    - name: Remove haskell
+      if: ${{inputs.haskell == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/.ghcup
+    - name: Remove google-cloud-cli
+      if: ${{inputs.google-cloud-cli == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y google-cloud-cli > /dev/null
+    - name: Remove google-chrome
+      if: ${{inputs.google-chrome == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y google-chrome-stable > /dev/null
+        sudo rm -rf /usr/local/share/chrom*
+    - name: Remove github-cli
+      if: ${{inputs.github-cli == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y gh > /dev/null
+    - name: Remove git-lfs
+      if: ${{inputs.git-lfs == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y git-lfs > /dev/null
+    - name: Remove git
+      if: ${{inputs.git == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y git git-ftp > /dev/null
+    - name: Remove gfortran
+      if: ${{inputs.gfortran == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y gfortran > /dev/null
+    - name: Remove gcc-compilers
+      if: ${{inputs.gcc-compilers == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y g++* > /dev/null
+    - name: Remove microsoft-edge
+      if: ${{inputs.microsoft-edge == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y microsoft-edge-stable > /dev/null
+        sudo rm -rf /usr/local/share/edge_driver
+    - name: Remove firefox
+      if: ${{inputs.firefox == 'true' }}
+      shell: bash
+      run: |
+        sudo apt-get remove --purge -y firefox > /dev/null
+        sudo rm -rf /usr/local/share/gecko_driver
+    - name: Remove erlang
+      if: ${{inputs.erlang == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y esl-erlang > /dev/null
+    - name: Remove dotnet
+      if: ${{inputs.dotnet == 'true' }}
+      shell: bash
+      run: |
+        sudo rm -rf /usr/share/dotnet/ /etc/skel/.dotnet/ ~/.dotnet/
+        sudo apt-get remove --purge -y dotnet* aspnetcore* > /dev/null
+    - name: Remove container-tools
+      if: ${{inputs.container-tools == 'true' }}
+      shell: bash
+      run: sudo apt-get remove --purge -y podman buildah skopeo > /dev/null
+    - name: Remove codeql-bundle
+      if: ${{inputs.codeql-bundle == 'true' }}
+      shell: bash
+      run: sudo rm -rf /opt/hostedtoolcache/CodeQL
+    - name: Remove cmake
+      if: ${{inputs.cmake == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/cmake-3.30.3-linux-x86_64
+    - name: Remove swift
+      if: ${{inputs.swift == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/share/swift
+    - name: Remove clang
+      if: ${{inputs.clang == 'true' }}
+      shell: bash
+      run: sudo apt-get autoremove --purge -y clang* lldb* lld* clang-format* clang-tidy* > /dev/null
+    - name: Remove aws-tools
+      if: ${{inputs.aws-tools == 'true' }}
+      shell: bash
+      run: |
+        sudo rm -rf /usr/local/aws-cli /usr/local/bin/aws /usr/local/aws-sam-cli /usr/local/bin/sam
+        sudo apt-get autoremove --purge -y session-manager-plugin > /dev/null
+    - name: Remove apache
+      if: ${{inputs.apache == 'true' }}
+      shell: bash
+      run: sudo apt-get autoremove --purge -y apache2 > /dev/null
+    - name: Remove aliyun
+      if: ${{inputs.aliyun == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/aliyun
+    - name: Remove bicep
+      if: ${{inputs.bicep == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/bicep
+    - name: Remove azure-devops-cli
+      if: ${{inputs.azure-devops-cli == 'true' }}
+      shell: bash
+      run: sudo rm -rf /opt/az/azcliextensions
+    - name: Remove azure-cli
+      if: ${{inputs.azure-cli == 'true' }}
+      shell: bash
+      run: sudo apt-get autoremove --purge -y azure-cli > /dev/null
+    - name: Remove azcopy
+      if: ${{inputs.azcopy == 'true' }}
+      shell: bash
+      run: sudo rm -rf /usr/local/bin/azcopy
+    - name: Remove powershell
+      if: ${{inputs.powershell == 'true' }}
+      shell: bash
+      run: |
+        sudo rm -rf /usr/local/share/powershell /opt/microsoft/powershell/
+        sudo apt-get autoremove --purge -y powershell* > /dev/null
+    - name: Remove manual, doc, info
+      if: ${{inputs.man == 'true' }}
+      shell: bash
+      run: |
+        sudo rm -rf /usr/share/man/* /usr/share/doc/* /usr/share/info/* /usr/local/share/man/* /usr/local/share/doc/* /usr/local/share/info/*
+    - name: Disk space available
+      shell: bash
+      run: |
+        echo "Available storage:"
+        df -h

@@ -1,0 +1,166 @@
+name: Test
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 1 */3 *'
+
+jobs:
+  test_2004:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+      - name: Test Action
+        id: test-action
+        uses: ./
+        with:
+          aliyun: true
+          android-sdk: true
+          apache: true
+          aws-tools: true
+          azcopy: true
+          azure-cli: true
+          azure-devops-cli: true
+          bazel: true
+          bicep: true
+          clang: true
+          cmake: true
+          codeql-bundle: true
+          container-tools: true
+          docker: true
+          docker-data: true
+          dotnet: true
+          erlang: true
+          firefox: true
+          gcc-compilers: true
+          gfortran: true
+          github-cli: true
+          git-lfs: true
+          git: true
+          google-chrome: true
+          google-cloud-cli: true
+          golang: true
+          haskell: true
+          heroku: true
+          hhvm: true
+          homebrew: true
+          java-tools: true
+          julia: true
+          kotlin: true
+          kubernetes-tools: true
+          leiningen: true
+          man: true
+          microsoft-edge: true
+          miniconda: true
+          mongodb: true
+          mono: true
+          mssql-tools: true
+          mysql: true
+          nginx: true
+          nodejs: true
+          nvm: true
+          oc-cli: true
+          oras-cli: true
+          packer: true
+          phantomjs: true
+          php: true
+          pipx-packages: true
+          postgresql: true
+          powershell: true
+          pulumi: true
+          pypy: true
+          python: true
+          rlang: true
+          ruby: true
+          rust: true
+          sbt: true
+          selenium: true
+          snap: true
+          sqlpackage: true
+          swap: true
+          swift: true
+          terraform: true
+          vcpkg: true
+          yq: true
+          zstd: true
+  test_latest:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          id: checkout
+          uses: actions/checkout@v4
+        - name: Test Action
+          id: test-action
+          uses: ./
+          with:
+            aliyun: true
+            android-sdk: true
+            apache: true
+            aws-tools: true
+            azcopy: true
+            azure-cli: true
+            azure-devops-cli: true
+            bazel: true
+            bicep: true
+            clang: true
+            cmake: true
+            codeql-bundle: true
+            container-tools: true
+            docker: true
+            docker-data: true
+            dotnet: true
+            firefox: true
+            gcc-compilers: true
+            gfortran: true
+            github-cli: true
+            git-lfs: true
+            git: true
+            google-chrome: true
+            google-cloud-cli: true
+            golang: true
+            haskell: true
+            heroku: true
+            homebrew: true
+            java-tools: true
+            julia: true
+            kotlin: true
+            kubernetes-tools: true
+            leiningen: true
+            man: true
+            microsoft-edge: true
+            miniconda: true
+            mono: true
+            mssql-tools: true
+            mysql: true
+            nginx: true
+            nodejs: true
+            nvm: true
+            oc-cli: true
+            oras-cli: true
+            packer: true
+            php: true
+            pipx-packages: true
+            postgresql: true
+            powershell: true
+            pulumi: true
+            pypy: true
+            python: true
+            rlang: true
+            ruby: true
+            rust: true
+            sbt: true
+            selenium: true
+            snap: true
+            sqlpackage: true
+            swap: true
+            swift: true
+            terraform: true
+            vcpkg: true
+            yq: true
+            zstd: true
